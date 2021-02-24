@@ -33,3 +33,9 @@ When we run `docker run hello-world`, here what happens:
 - The docker server check in our image cache (the local images) for the ran image
 - If the image is not in the image cache, it reach to the docker hub, and check if the image exist. If so, it downloads the image into the image cache, and runs it.
 
+### What is REALLY a container
+
+A system is a set of programs, interacting with a kernel through system calls. The kernel access the system hardware to run the processes.
+
+![Container](img/1_1.png)
+
