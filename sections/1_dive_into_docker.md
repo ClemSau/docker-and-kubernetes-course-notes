@@ -39,3 +39,7 @@ A system is a set of programs, interacting with a kernel through system calls. T
 
 ![Container](img/1_1.png)
 
+An image contains essentially a file system snapshot and a startup command.
+
+![Image](img/1_2.png)
+
