@@ -35,11 +35,12 @@ When we run `docker run hello-world`, here what happens:
 
 ### What is REALLY a container
 
-A system is a set of programs, interacting with a kernel through system calls. The kernel access the system hardware to run the processes.
+A system is a set of programs, interacting with a kernel through system calls. The kernel access the system hardware to run the processes. 
+
+It is tailored for the needs according to the image, for example, a portion of the hard drive is dedicated to the container according to the programs contained in the image.
 
 ![Container](img/1_1.png)
 
 An image contains essentially a file system snapshot and a startup command.
 
 ![Image](img/1_2.png)
-
