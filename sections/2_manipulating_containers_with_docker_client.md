@@ -12,3 +12,8 @@ Creating and running a container from an image: `docker run {image_name}`
 
 eg: `docker run busybox echo bye world`
 
+## Listing running containers
+
+`docker ps`
+
+![Docker ps](img/2_2.png)
