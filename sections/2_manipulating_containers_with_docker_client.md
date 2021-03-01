@@ -17,3 +17,6 @@ eg: `docker run busybox echo bye world`
 `docker ps`
 
 ![Docker ps](img/2_2.png)
+
+`docker ps --all` would list all the containers ever created on our machine
+
