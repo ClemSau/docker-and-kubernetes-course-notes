@@ -20,3 +20,17 @@ eg: `docker run busybox echo bye world`
 
 `docker ps --all` would list all the containers ever created on our machine
 
+## Container lifecycle
+
+`docker run {image_name}` = `docker create {image_name}` + `docker start {image_name}` 
+
+![Docker create & start](img/2_3.png)
+
+creating: preparing the file system
+
+starting: running the startup command
+
+## Deleting unused data
+
+`docker system prune`
+
