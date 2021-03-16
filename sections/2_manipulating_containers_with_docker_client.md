@@ -18,7 +18,7 @@ eg: `docker run busybox echo bye world`
 
 ![Docker ps](img/2_2.png)
 
-`docker ps --all` would list all the containers ever created on our machine
+`docker ps --all` "-a" or "--all" would list all the containers ever created on our machine
 
 ## Container lifecycle
 
@@ -34,3 +34,12 @@ starting: running the startup command
 
 `docker system prune`
 
+## Get emited logs from container
+
+`docker logs {container_id}` get a record of all the logs emited by the container since it has been started
+
+## Stopping containers
+
+`docker stop {container_id}` stop a container (stop with a cleanup period)
+
+`docker kill {container_id}` kill a container (instant stop)
