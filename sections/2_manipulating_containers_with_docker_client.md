@@ -43,3 +43,24 @@ starting: running the startup command
 `docker stop {container_id}` stop a container (stop with a cleanup period)
 
 `docker kill {container_id}` kill a container (instant stop)
+
+## Multi-command containers
+
+For instance if we want to acess the redis cli, we would need to run both `redis run sever` and `redis-cli` commands in the same container
+
+For that we can execute additionnal commands in running containers:
+
+![Docker exec](img/2_4.png)
+
+First start the container with `docker run redis`
+
+Then `docker exec -it {container_id} redis-cli`
+
+### The purpose of the `-it` flag
+
+Since docker is a "Linux virtual machine" it's running with "STDIN", "STDOUT" and "STDERR" channels. 
+
+![Container channels](img/2_5.png)
+
+- The `-i` has the purpose of connecting to the "STDIN" channel 
+- The `t` flag has the purpose of formating our output
