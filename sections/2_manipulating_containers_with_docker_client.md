@@ -69,11 +69,11 @@ Since docker is a "Linux virtual machine" it's running with "STDIN", "STDOUT" an
 
 ### Opening a shell in a running container
 
-Get full terminal access of the running container :`docker exec -it {container_id} sh`
+Get full terminal access of the running container: `docker exec -it {container_id} sh`
 
 To exit it use either `CTRL + C` or `CTRL + D`
 
 ### Starting a container with a shell
 
-`docker run {image} shell`
+Run an image and get the terminal access of it: `docker run -it {image_name} sh`
 
