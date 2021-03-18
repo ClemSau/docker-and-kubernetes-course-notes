@@ -64,3 +64,16 @@ Since docker is a "Linux virtual machine" it's running with "STDIN", "STDOUT" an
 
 - The `-i` has the purpose of connecting to the "STDIN" channel 
 - The `t` flag has the purpose of formating our output
+
+## Using the shell
+
+### Opening a shell in a running container
+
+Get full terminal access of the running container :`docker exec -it {container_id} sh`
+
+To exit it use either `CTRL + C` or `CTRL + D`
+
+### Starting a container with a shell
+
+`docker run {image} shell`
+
