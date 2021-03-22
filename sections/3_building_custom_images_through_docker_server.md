@@ -29,3 +29,6 @@ Then we build the image with the command `docker build .`
 Which return an id you can the run with `docker run {image_id}`
 
 Except during the first step (`FROM alpine`), a temporary container is created, so the final image is formed with multiple layers saved from intermediate containers.
+
+## Rebuilds with cache
+
