@@ -30,5 +30,15 @@ Which return an id you can the run with `docker run {image_id}`
 
 Except during the first step (`FROM alpine`), a temporary container is created, so the final image is formed with multiple layers saved from intermediate containers.
 
-## Rebuilds with cache
+## Tagging an image
+
+In order to refer to the image with a tag, use the followinng structure
+
+![Tagging an image](img/3_1.png)
+
+![Tag segmentation](img/3_2.png)
+
+The images with a simplified name are community images.
+
+We can then run the image with the command `docker run {user_id}/{repo_name}`
 
