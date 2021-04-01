@@ -21,3 +21,7 @@ Some takeways from this sections are:
 In order to allow external network to access the conterner's intern network and make requests, we need to map the ports accordingly
 
 ![Port mapping](img/4_1.png)
+
+## Copy operations segmentation
+
+It is important to be aware of the order in which `COPY`, and `RUN` keywords are used, because when docker detect a change in the process of one step, it reruns all the following steps during the build.
